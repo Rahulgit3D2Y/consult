@@ -16,13 +16,98 @@ body
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height:550px;
+    height:600px;
 }
 .move
 {
     position:relative;
     top: 50px;
 }
+.box-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .box-wrap h1 {
+    display: inline-block;
+    z-index: 2;
+  }
+  
+  .box-wrap:before,
+  .box-wrap:after {
+    content: '';
+    position: absolute;
+     bottom: -20px; /* Increase the value for a more prominent bottom line */
+    right: 15.5%;
+    left: 15.5%;
+    border: 4px solid #19a7f8;
+    z-index: -1;
+  }
+  
+  .box-wrap:before {
+    top: 30px;
+  }
+  
+ 
+  
+ 
+  
+  .card {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .text-center {
+    text-align: center;
+    transition: color 0.5s;
+  }
+  
+  .hidden {
+    display: none;
+    transition: opacity 0.5s;
+  }
+  
+  .card:hover {
+    background: linear-gradient(to bottom, #0948c8, #0066cc);
+  }
+  
+   
+  
+  
+  
+  .card:hover h1,  .card:hover  img {
+    display: none;
+  }
+  
+   
+  
+  .card h2 {
+    overflow: hidden;
+  }
+  
+  .card:hover h2 {
+    display: block;
+    opacity: 1;
+  }
+  
+  
+
+
+
+
+
+
+
+
 
 
 @media only screen and (width<1000px) {
