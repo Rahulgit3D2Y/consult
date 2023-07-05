@@ -85,7 +85,7 @@ body
  
  
   
-  .card {
+  .cardh {
     display: grid;
     place-content: center;
     height: 400px;
@@ -105,21 +105,21 @@ body
     transition: opacity 0.5s;
   }
   
-  .card:hover {
+  .cardh:hover {
     background: linear-gradient(to bottom, #0948c8, #0066cc);
     transition: background-color 2s; /* Slow down the transition */
   }
   
-  .card:hover h1,
-  .card:hover img {
+  .cardh:hover h1,
+  .cardh:hover img {
     display: none;
   }
   
-  .card h2 {
+  .cardh h2 {
     overflow: hidden;
   }
   
-  .card:hover h2 {
+  .cardh:hover h2 {
     display: block;
     opacity: 1;
   }
@@ -129,7 +129,10 @@ body
   text-align: left;
 }
 
-
+.owl-nav
+{
+  display: none;
+}
 
 
 
