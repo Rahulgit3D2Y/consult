@@ -35,6 +35,8 @@ body
   .box-wrap h1 {
     display: inline-block;
     z-index: 2;
+    background-color: white;
+    padding: 0 20px ;
   }
   
   .box-wrap:before  {
@@ -81,6 +83,8 @@ body
   .box-wrap2:before {
     top: 30px;
   }
+
+ 
   
  
  
@@ -94,6 +98,7 @@ body
     transition: background-color 0.5s;
     position: relative;
     overflow: hidden;
+    background-color: rgb(255, 249, 249);
   }
   
   .text-center {
@@ -134,7 +139,35 @@ body
   display: none;
 }
 
+.connect_background
+{
+  background-image: url(images/connect_background.jpg);
+ 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;          background-attachment: fixed;
 
+ }
+
+/* form */
+ 
+
+.custom-form .form-control {
+  position: relative;
+  z-index: 1;
+}
+
+.custom-form .form-control:focus {
+  z-index: 2;
+}
+
+.custom-form .form-control:focus::placeholder {
+  transform: translateY(-30px);
+  transition: transform 0.3s ease;
+}
+
+ 
 
 
 
@@ -159,4 +192,8 @@ body
    {
     text-align: center;
    }
+   .connect_background
+{
+    height: 650px;
+ }
  }
